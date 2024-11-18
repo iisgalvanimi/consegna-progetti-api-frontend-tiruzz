@@ -3,21 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AnimaliComponent } from './animali/animali.component';
-import { FruttiComponent } from './frutti/frutti.component';
-import { GenericComponent } from './generic/generic.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { FooComponent } from './foo/foo.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    AnimaliComponent,
-    FruttiComponent,
-    GenericComponent
+    AppComponent, FooComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
